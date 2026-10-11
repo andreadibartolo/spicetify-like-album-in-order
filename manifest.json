@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Like All Album Tracks In Order",
+        "description": "💚🇮🇹 Estensione Spicetify che ti permette di aggiungere o rimuovere tutti i brani di un album dai Preferiti di Spotify preservando l'ordine originale delle tracce (la traccia n.1 sarà più in alto nei Preferiti, l'ultima traccia sarà più in basso).\n\n💚🇬🇧 Spicetify extension that lets you add or remove all tracks from an album to/from your Spotify Liked Songs, preserving the original track order (track n.1 appears at the top, and the last track at the bottom).",
+        "preview": "preview.png",
+        "main": "likeAlbumInOrder.js",
+        "readme": "README.md",
+        "tags": [
+            "album",
+            "liked-songs",
+            "library",
+            "order",
+            "utility"
+        ]
+    }
+]
