@@ -4,7 +4,7 @@
         "author": "andreadibartolo on GitHub",
         "version": "26.10.11.9",
         "description": "v 26.10.11.9 - Spicetify extension that lets you add or remove all tracks from an album to/from your Spotify Liked Songs, preserving the original track order (track n.1 appears at the top, and the last track at the bottom).",
-        "branch": "34c133516a496200a8c9af226676138a13ba8901",
+        "branch": "56932331ca9855115e3175dfb3d7ef0ec01a3506",
         "preview": "preview.png",
         "main": "likeAlbumInOrder.js",
         "readme": "README.md",
