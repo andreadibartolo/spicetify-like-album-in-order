@@ -1,4 +1,4 @@
-name: Purge jsDelivr cache
+name: Refresh extension and version badge caches
 
 on:
   push:
@@ -7,6 +7,8 @@ on:
     paths:
       - likeAlbumInOrder.js
       - manifest.json
+      - README.md
+      - README.it.md
       - .github/workflows/purge-jsdelivr-cache.yml
   workflow_dispatch:
 
@@ -21,3 +23,15 @@ jobs:
         run: >-
           curl --fail --show-error --silent
           https://purge.jsdelivr.net/gh/andreadibartolo/spicetify-like-album-in-order@main/likeAlbumInOrder.js
+      - name: Purge Marketplace README files from jsDelivr
+        run: |
+          curl --fail --show-error --silent \
+            https://purge.jsdelivr.net/gh/andreadibartolo/spicetify-like-album-in-order@main/README.md
+          curl --fail --show-error --silent \
+            https://purge.jsdelivr.net/gh/andreadibartolo/spicetify-like-album-in-order@main/README.it.md
+      - name: Refresh version badges on Shields.io
+        run: |
+          curl --fail --show-error --silent --output /dev/null \
+            'https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fandreadibartolo%2Fspicetify-like-album-in-order%2Fmain%2Fmanifest.json&query=%24%5B0%5D.version&label=Version&style=for-the-badge&color=fb9404&cacheSeconds=120'
+          curl --fail --show-error --silent --output /dev/null \
+            'https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fandreadibartolo%2Fspicetify-like-album-in-order%2Fmain%2Fmanifest.json&query=%24%5B0%5D.version&label=Versione&style=for-the-badge&color=fb9404&cacheSeconds=120'
