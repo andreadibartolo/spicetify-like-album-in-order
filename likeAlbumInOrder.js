@@ -1,6 +1,6 @@
-// NAME: Like Album In Order
-// AUTHOR: Custom Spicetify Extension
-// DESCRIPTION: Aggiunge o rimuove tutti i brani di un album dai Preferiti preservando l'ordine originale, con sezione dedicata nelle Impostazioni di Spotify.
+// NAME: Like All Album Tracks In Order
+// AUTHOR: andreadibartolo
+// DESCRIPTION: Adds or removes all tracks of an album from Favorites while preserving the original order, with a dedicated section in Spotify Settings.
 
 (function likeAlbumInOrder() {
     if (

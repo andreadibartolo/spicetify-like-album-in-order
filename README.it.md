@@ -78,7 +78,7 @@ Apri le **Impostazioni di Spotify** (`Ctrl + P` oppure clicca sull'icona del pro
 | Impostazione |	Default	| Descrizione |
 | --- |  :---:  | --- |
 Ritardo tra il salvataggio dei brani (ms) |	`2000 ms` |	Pausa tra un brano e l'altro per garantire timestamp distinti sui server di Spotify.
-|Chiedi quando salvi un album con il `+`	| `Attivo`|	Mostra il popup di conferma quando clicchi sul `+` per salvare tutte le tracce di album nei tuoi preferiti.
+|Chiedi quando salvi un album con il `+`	| `Attivo`|	Mostra il popup di conferma quando clicchi sul `+` per salvare tutte le tracce di un album nei tuoi preferiti.
 |Chiedi conferma prima di rimuovere i brani|	`Attivo`	|Mostra un avviso prima di rimuovere tutti i brani dell'album dai Preferiti.
 
 ---

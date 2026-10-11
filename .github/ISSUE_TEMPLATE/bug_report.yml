@@ -1,43 +1,43 @@
-name: 🐛 Segnalazione Bug (Bug Report)
-description: Segnala un malfunzionamento o un errore dell'estensione Like Album In Order
+name: 🐛 Bug Report
+description: Report a bug or issue with the extension
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
-        Grazie per aver dedicato del tempo a segnalare un problema! Compila i campi qui sotto per aiutarci a individuare e risolvere il bug rapidamente.
+        Thanks for taking the time to report a bug! Please fill out the fields below to help us identify and fix the issue quickly.
 
   - type: textarea
     id: description
     attributes:
-      label: 📝 Descrizione del problema
-      description: Spiega in modo chiaro cosa è successo e cosa invece ti aspettavi che succedesse.
-      placeholder: "Es. Cliccando su 'Like in ordine' su un album doppio, il contatore si ferma alla traccia 15..."
+      label: 📝 Description of the problem
+      description: Explain in a clear way what happened and what you expected to happen.
+      placeholder: "E.g., Clicking 'Like in order' on a double album, the counter stops at track 15..."
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: 🔄 Passaggi per riprodurre il bug
-      description: Elenca i passaggi esatti per far verificare l'errore.
+      label: 🔄 Steps to reproduce the bug
+      description: List the exact steps to trigger the error.
       value: |
-        1. Apri l'album '...' (URI o link dell'album: )
-        2. Clicca su '...'
-        3. Osserva l'errore...
+        1. Open the album '...' (URI or album link: )
+        2. Click on '...'
+        3. Observe the error...
     validations:
       required: true
 
   - type: dropdown
     id: trigger_method
     attributes:
-      label: 🖱️ Da dove hai avviato l'azione?
+      label: 🖱️ From where did you initiate the action?
       options:
-        - Pulsante nella barra dell'album ("Like in ordine" / "Rimuovi Like")
-        - Menu contestuale (3 puntini '...' o tasto destro sull'album)
-        - Popup automatico al clic sul pulsante '+' dell'album
-        - Sezione Impostazioni di Spotify
+        - Button in the album bar ("Like in order" / "Remove Like")
+        - Context menu (3 dots '...' or right-click on the album)
+        - Automatic popup when clicking the '+' button on the album
+        - Spotify Settings section
     validations:
       required: true
 
@@ -56,28 +56,28 @@ body:
   - type: input
     id: versions
     attributes:
-      label: 📦 Versioni di Spotify e Spicetify
-      description: "Puoi verificarle eseguendo `spicetify -v` nel terminale e controllando 'Informazioni su Spotify' nel client."
-      placeholder: "Es. Spotify 1.2.45.454 / Spicetify v2.38.4"
+      label: 📦 Spotify and Spicetify versions
+      description: "You can verify them by running `spicetify -v` in the terminal and checking 'About Spotify' in the client."
+      placeholder: "E.g., Spotify 1.2.45.454 / Spicetify v2.38.4"
     validations:
       required: true
 
   - type: input
     id: delay_setting
     attributes:
-      label: ⏱️ Valore impostato per il Delay (ms)
-      placeholder: "Es. 500 ms (default)"
+      label: ⏱️ Value set for the delay (ms)
+      placeholder: "E.g., 2000 ms (default)"
     validations:
       required: false
 
   - type: textarea
     id: logs
     attributes:
-      label: 🖥️ Log della Console (DevTools)
+      label: 🖥️ Log of the Console (DevTools)
       description: |
-        1. Esegui `spicetify enable-devtools` nel terminale.
-        2. Premi `Ctrl + Shift + I` (o `Cmd + Option + I` su Mac) dentro Spotify e apri la scheda **Console**.
-        3. Scrivi `LikeAlbumInOrder` nella barra *Filter* e incolla qui sotto eventuali messaggi o errori rossi (oppure allega uno screenshot).
+        1. Run `spicetify enable-devtools` in the terminal.
+        2. Press `Ctrl + Shift + I` (or `Cmd + Option + I` on Mac) inside Spotify and open the **Console** tab.
+        3. Type `LikeAlbumInOrder` in the *Filter* bar and paste any messages or red errors here (or attach a screenshot).
       render: text
     validations:
       required: false
@@ -85,7 +85,7 @@ body:
   - type: checkboxes
     id: checks
     attributes:
-      label: ✅ Verifiche preliminari
+      label: ✅ Preliminary Checks
       options:
-        - label: Ho verificato di avere l'ultima versione dell'estensione e di aver eseguito `spicetify apply`.
+        - label: I have verified that I have the latest version of the extension and have run `spicetify apply`.
           required: true

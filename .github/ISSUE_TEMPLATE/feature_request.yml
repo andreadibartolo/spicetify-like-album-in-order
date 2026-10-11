@@ -1,18 +1,18 @@
-name: 💡 Proponi un'idea (Feature Request)
-description: Suggerisci una nuova funzionalità o un miglioramento per l'estensione
+name: 💡 Feature Request
+description: Suggest a new feature or improvement for the extension
 title: "[Feature]: "
 labels: ["enhancement"]
 body:
   - type: markdown
     attributes:
       value: |
-        Hai un'idea per migliorare **Like Album In Order**? Scrivila qui sotto! *(You can write in Italian or English).*
+        Have an idea to improve **Like Album In Order**? Share it below! *(You can write in Italian or English).*
 
   - type: textarea
     id: idea
     attributes:
-      label: 💡 La tua idea / Your idea
-      description: Descrivi la funzionalità o la modifica che vorresti vedere aggiunta all'estensione.
-      placeholder: "Descrivi qui la tua proposta..."
+      label: 💡 Your idea
+      description: Describe the feature or improvement you'd like to see added to the extension.
+      placeholder: "Describe your proposal here..."
     validations:
       required: true
