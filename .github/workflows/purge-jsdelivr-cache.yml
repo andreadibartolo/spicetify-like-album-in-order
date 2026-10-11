@@ -1,0 +1,23 @@
+name: Purge jsDelivr cache
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - likeAlbumInOrder.js
+      - manifest.json
+      - .github/workflows/purge-jsdelivr-cache.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge extension JavaScript from jsDelivr
+        run: >-
+          curl --fail --show-error --silent
+          https://purge.jsdelivr.net/gh/andreadibartolo/spicetify-like-album-in-order@main/likeAlbumInOrder.js
