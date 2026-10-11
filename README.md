@@ -51,6 +51,7 @@ When you add all the tracks from an album to **Liked Songs** on Spotify:
 - ➕ **Smart popup on the album `+` button:** when saving an album to your library by clicking the `+` button, a window asks if you also want to add all individual tracks to Favorites in order.
 - 📊 **Real-time progress bar (HUD):** displays a floating widget showing live progress (e.g., `♥ 1 / 12`, `♥ 2 / 12`...).
 - ⚙️ **Integrated Settings panel:** a dedicated section directly within **Spotify Settings** to customize the delay (in milliseconds) and confirmation popups.
+- 🌐 **Localized interface:** automatically follows Spicetify's locale, the page language, or the browser language, with English as a fallback. Supports English, Chinese, Hindi, Spanish, French, Arabic, Bengali, Portuguese, Russian, and Urdu, as well as Italian.
 
 ---
 

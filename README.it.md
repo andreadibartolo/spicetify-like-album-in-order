@@ -50,6 +50,7 @@ Quando aggiungi tutti i brani di un album a **Brani che ti piacciono** su Spotif
 - ➕ **Popup intelligente sul tasto `+` dell'album:** quando salvi un album nella libreria cliccando sul pulsante `+`, una finestra ti chiede se desideri aggiungere anche tutti i singoli brani ai Preferiti in ordine.
 - 📊 **Barra di avanzamento in tempo reale (HUD):** mostra un widget flottante con il progresso live (es. `♥ 1 / 12`, `♥ 2 / 12`...).
 - ⚙️ **Pannello Impostazioni integrato:** sezione dedicata direttamente nelle **Impostazioni di Spotify** per personalizzare il ritardo in millisecondi e i popup di conferma.
+- 🌐 **Interfaccia localizzata:** usa la lingua di Spicetify, quella della pagina o quella del browser, con l'inglese come fallback. Supporta inglese, cinese, hindi, spagnolo, francese, arabo, bengalese, portoghese, russo e urdu, oltre all'italiano.
 
 ---
 
