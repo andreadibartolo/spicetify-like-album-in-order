@@ -53,7 +53,6 @@ Quando aggiungi tutti i brani di un album a **Brani che ti piacciono** su Spotif
    ```
 
 ---
-
 ## ⚙️ Configurazione
 Apri le **Impostazioni di Spotify** (`Ctrl + P` oppure clicca sull'icona del profilo in alto a destra $\rightarrow$ **Impostazioni**) e scorri fino in fondo alla pagina nella sezione **Like Album In Order (Estensione)**:
 
@@ -62,3 +61,10 @@ Apri le **Impostazioni di Spotify** (`Ctrl + P` oppure clicca sull'icona del pro
 Ritardo tra il salvataggio dei brani (ms) |	`2000 ms` |	Pausa tra un brano e l'altro per garantire timestamp distinti sui server di Spotify.
 |Chiedi quando salvi un album con il `+`	| `Attivo`|	Mostra il popup di conferma quando clicchi sul `+` per salvare un album nella libreria.
 |Chiedi conferma prima di rimuovere i brani|	`Attivo`	|Mostra un avviso prima di rimuovere tutti i brani dell'album dai Preferiti.
+
+---
+## 🐛 Segnalazione Bug e Supporto
+Hai riscontrato un problema o hai un'idea per migliorare l'estensione?
+Apri una [Nuova Issue](../../issues/new/choose) compilando il modulo preimpostato con la tua versione di Spotify, Spicetify e i log della console.
+
+---
