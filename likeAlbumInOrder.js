@@ -1137,6 +1137,7 @@
         btn.title = t("unlikeButtonTitle");
         btn.innerHTML = getUnlikeButtonHtml();
         styleActionButton(btn, "#f15e6c", "rgba(241, 94, 108, 0.12)");
+        btn.style.marginLeft = "4px";
         btn.addEventListener("click", () => {
             if (btn.dataset.albumUri) handleRemoveClick(btn.dataset.albumUri);
         });
@@ -1156,10 +1157,19 @@
         const actionBar = findActionBar();
         if (!actionBar) return;
 
-        // Cerca il pulsante '...' o il pulsante Play dentro la barra azioni (senza dipendere dal tag <main>)
-        const anchorBtn =
+        const moreOptionsButton =
             actionBar.querySelector('[data-testid="more-button"]') ||
             actionBar.querySelector('[data-testid="context-menu-button"]') ||
+            [...actionBar.querySelectorAll("button")].find((button) => {
+                const ariaLabel = (button.getAttribute("aria-label") || "").toLowerCase();
+                return (
+                    button.getAttribute("aria-haspopup") === "menu" ||
+                    ariaLabel.includes("more options") ||
+                    ariaLabel.includes("altre opzioni")
+                );
+            });
+        const anchorBtn =
+            moreOptionsButton ||
             actionBar.querySelector('[data-testid="play-button"]') ||
             actionBar.querySelector("button");
 
