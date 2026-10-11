@@ -1160,7 +1160,8 @@
         const anchorBtn =
             actionBar.querySelector('[data-testid="more-button"]') ||
             actionBar.querySelector('[data-testid="context-menu-button"]') ||
-            actionBar.querySelector('[data-testid="play-button"]');
+            actionBar.querySelector('[data-testid="play-button"]') ||
+            actionBar.querySelector("button");
 
         const container = anchorBtn ? anchorBtn.parentElement : actionBar;
 
