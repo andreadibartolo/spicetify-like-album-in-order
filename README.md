@@ -64,7 +64,10 @@ Ritardo tra il salvataggio dei brani (ms) |	`2000 ms` |	Pausa tra un brano e l'a
 
 ---
 ## 🐛 Segnalazione Bug e Supporto
-Hai riscontrato un problema o hai un'idea per migliorare l'estensione?
-Apri una [Nuova Issue](../../issues/new?template=bug_report.yml) compilando il modulo preimpostato con la tua versione di Spotify, Spicetify e i log della console.
+### 😥 Hai riscontrato un problema?
+Apri un [nuovo issue](../../issues/new?template=bug_report.yml) compilando il modulo preimpostato con la tua versione di Spotify, Spicetify e i log della console.
+
+### 💡 Hai un'idea per migliorare l'estensione?
+Apri una [nuova feature request](../../issues/new?template=feature_request.yml).
 
 ---

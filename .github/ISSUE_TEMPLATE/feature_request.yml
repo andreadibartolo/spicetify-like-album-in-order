@@ -1,0 +1,91 @@
+name: 💡 Feature request
+description: Proponi una nuova funzionalità o un miglioramento per l'estensione Like Album In Order
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver dedicato del tempo a segnalare un problema! Compila i campi qui sotto per aiutarci a individuare e risolvere il bug rapidamente.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Descrizione del problema
+      description: Spiega in modo chiaro cosa è successo e cosa invece ti aspettavi che succedesse.
+      placeholder: "Es. Cliccando su 'Like in ordine' su un album doppio, il contatore si ferma alla traccia 15..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔄 Passaggi per riprodurre il bug
+      description: Elenca i passaggi esatti per far verificare l'errore.
+      value: |
+        1. Apri l'album '...' (URI o link dell'album: )
+        2. Clicca su '...'
+        3. Osserva l'errore...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: trigger_method
+    attributes:
+      label: 🖱️ Da dove hai avviato l'azione?
+      options:
+        - Pulsante nella barra dell'album ("Like in ordine" / "Rimuovi Like")
+        - Menu contestuale (3 puntini '...' o tasto destro sull'album)
+        - Popup automatico al clic sul pulsante '+' dell'album
+        - Sezione Impostazioni di Spotify
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: 💻 Sistema Operativo
+      options:
+        - Windows 11
+        - Windows 10
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: versions
+    attributes:
+      label: 📦 Versioni di Spotify e Spicetify
+      description: "Puoi verificarle eseguendo `spicetify -v` nel terminale e controllando 'Informazioni su Spotify' nel client."
+      placeholder: "Es. Spotify 1.2.45.454 / Spicetify v2.38.4"
+    validations:
+      required: true
+
+  - type: input
+    id: delay_setting
+    attributes:
+      label: ⏱️ Valore impostato per il Delay (ms)
+      placeholder: "Es. 500 ms (default)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 🖥️ Log della Console (DevTools)
+      description: |
+        1. Esegui `spicetify enable-devtools` nel terminale.
+        2. Premi `Ctrl + Shift + I` (o `Cmd + Option + I` su Mac) dentro Spotify e apri la scheda **Console**.
+        3. Scrivi `LikeAlbumInOrder` nella barra *Filter* e incolla qui sotto eventuali messaggi o errori rossi (oppure allega uno screenshot).
+      render: text
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: ✅ Verifiche preliminari
+      options:
+        - label: Ho verificato di avere l'ultima versione dell'estensione e di aver eseguito `spicetify apply`.
+          required: true
