@@ -11,7 +11,7 @@
   <img src="https://img.shields.io/badge/Lingua-Italiano_(Attuale)-1ed760?style=for-the-badge&cacheSeconds=3600" valign="middle" />
 </a>
 </div>
-<br><br>
+<br>
 
 ---
 
