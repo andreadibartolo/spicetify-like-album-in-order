@@ -1,13 +1,26 @@
 <div align="center">
 
-[![English](https://img.shields.io/badge/🇬🇧_Language-English_(Default)-1ed760?style=for-the-badge)](./README.md)
-[![Italiano](https://img.shields.io/badge/🇮🇹_Lingua-Italiano-282828?style=for-the-badge)](./README.it.md)
+
+<a href="./README.md">
+  <img src="./.github/icons/flag-united-kingdom_48x48.png" height="48" alt="UK" valign="middle" />
+  <img src="https://img.shields.io/badge/Language-English_(Default)-1ed760?style=for-the-badge" valign="middle" />
+</a>
+&nbsp;
+<div>
+<a href="./README.it.md">
+  <img src="./.github/icons/flag-italy_32x32.png" height="32" alt="IT" valign="middle" />
+  <img src="https://img.shields.io/badge/Lingua-Italiano-282828?style=for-the-badge" valign="middle" />
+</a>
+</div>
+<br><br>
+
+---
 
 # 💚 Spicetify — Like Album In Order
 
 **Save all tracks from an album to your Spotify Favorites while maintaining the original tracklist order.**
 
-[![Spicetify](https://img.shields.io/badge/Spicetify-Extension-1ed760?style=for-the-badge&logo=spotify&logoColor=white)](https://spicetify.app)
+[![Spicetify](https://img.shields.io/badge/Spicetify-Extension-1ed760?style=for-the-badge&logo=spotify&logoColor=#1ABA53)](https://spicetify.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Issues](https://img.shields.io/github/issues/TUO_USERNAME/spicetify-like-album-in-order?style=for-the-badge&color=f15e6c)](https://github.com/andreadibartolo/spicetify-like-album-in-order/issues)
 
