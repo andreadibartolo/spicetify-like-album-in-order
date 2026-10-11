@@ -1,15 +1,15 @@
 <div align="center">
 
 
-<a href="./README.md">
+<a href="./README.md" style="underline: none">
   <img src="./.github/icons/flag-united-kingdom_48x48.png" height="48" alt="UK" valign="middle" />
-  <img src="https://img.shields.io/badge/Language-English_(Default)-1ed760?style=for-the-badge" valign="middle" />
+  <img src="https://img.shields.io/badge/Language-English_(Default)-1ed760?style=for-the-badge&cacheSeconds=3600" valign="middle" />
 </a>
 &nbsp;
 <div>
-<a href="./README.it.md">
+<a href="./README.it.md" style="underline: none">
   <img src="./.github/icons/flag-italy_32x32.png" height="32" alt="IT" valign="middle" />
-  <img src="https://img.shields.io/badge/Lingua-Italiano-282828?style=for-the-badge" valign="middle" />
+  <img src="https://img.shields.io/badge/Lingua-Italiano-282828?style=for-the-badge&cacheSeconds=3600" valign="middle" />
 </a>
 </div>
 <br><br>
