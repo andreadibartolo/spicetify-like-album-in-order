@@ -44,7 +44,7 @@ body:
   - type: dropdown
     id: os
     attributes:
-      label: 💻 Sistema Operativo
+      label: 💻 O.S. (Operative System)
       options:
         - Windows 11
         - Windows 10
