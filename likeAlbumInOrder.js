@@ -1163,15 +1163,34 @@
             actionBar.querySelector('[data-testid="play-button"]') ||
             actionBar.querySelector("button");
 
-        const container = anchorBtn ? anchorBtn.parentElement : actionBar;
+        const buttonRow =
+            actionBar.matches(".main-actionBar-ActionBarRow") ||
+            actionBar.matches('[data-testid="action-bar-row"]')
+                ? actionBar
+                : actionBar.querySelector(
+                      ".main-actionBar-ActionBarRow, [data-testid=\"action-bar-row\"]"
+                  );
+        const container =
+            buttonRow ||
+            (anchorBtn?.parentElement === actionBar
+                ? actionBar
+                : anchorBtn?.parentElement?.parentElement) ||
+            actionBar;
+        let insertionAnchor = anchorBtn;
+        while (insertionAnchor?.parentElement && insertionAnchor.parentElement !== container) {
+            insertionAnchor = insertionAnchor.parentElement;
+        }
+        if (insertionAnchor?.parentElement !== container) insertionAnchor = null;
 
         let likeBtn = document.getElementById(LIKE_BUTTON_ID);
         if (likeBtn) {
             likeBtn.dataset.albumUri = albumUri;
         } else {
             likeBtn = createLikeButton(albumUri);
-            if (anchorBtn && anchorBtn.nextSibling) {
-                container.insertBefore(likeBtn, anchorBtn.nextSibling);
+            if (insertionAnchor?.nextSibling) {
+                container.insertBefore(likeBtn, insertionAnchor.nextSibling);
+            } else if (insertionAnchor) {
+                container.appendChild(likeBtn);
             } else {
                 container.appendChild(likeBtn);
             }
