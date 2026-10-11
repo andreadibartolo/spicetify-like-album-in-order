@@ -891,8 +891,14 @@
      */
     function getCurrentAlbumUri() {
         const pathname = Spicetify.Platform?.History?.location?.pathname || "";
-        if (!pathname.startsWith("/album/")) return null;
-        const albumId = pathname.split("/album/")[1]?.split("/")[0]?.split("?")[0];
+        const pathSegments = pathname.split("/").filter(Boolean);
+        const firstSegment = pathSegments[0] || "";
+        const hasLocalePrefix =
+            /^intl-[a-z0-9-]+$/i.test(firstSegment) ||
+            /^[a-z]{2,3}(?:-[a-z0-9]{2,8})*$/i.test(firstSegment);
+        const albumIndex = hasLocalePrefix ? 1 : 0;
+        if (pathSegments[albumIndex] !== "album") return null;
+        const albumId = pathSegments[albumIndex + 1]?.split("?")[0];
         return albumId ? `spotify:album:${albumId}` : null;
     }
 
