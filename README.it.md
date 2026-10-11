@@ -1,9 +1,9 @@
 <div align="center">
 
-<a href="./README.md" style="underline: none">
+<a href="https://github.com/andreadibartolo/spicetify-like-album-in-order#-spicetify--like-album-in-order" style="underline: none">
   <img src="./.github/icons/flag-united-kingdom_32x32.png" height="32" alt="EN" valign="middle" />
 </a>
-<a href="./README.md" style="underline: none">
+<a href="https://github.com/andreadibartolo/spicetify-like-album-in-order#-spicetify--like-album-in-order" style="underline: none">
   <img src="https://img.shields.io/badge/Language-English_(Default)-282828?style=for-the-badge&cacheSeconds=3600" valign="middle" />
 </a>
 &nbsp;
