@@ -27,6 +27,9 @@
 [![Spicetify](https://img.shields.io/badge/Spicetify-Extension-1ed760?style=for-the-badge&logo=spotify&logoColor=#1ABA53)](https://spicetify.app)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 [![Issues](https://img.shields.io/github/issues/andreadibartolo/spicetify-like-album-in-order?style=for-the-badge&color=f15e6c)](https://github.com/andreadibartolo/spicetify-like-album-in-order/issues)
+<br>
+
+[![Version](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fandreadibartolo%2Fspicetify-like-album-in-order%2Fmain%2Fmanifest.json&query=%24%5B0%5D.version&label=Version&style=for-the-badge&color=fb9404)](https://github.com/andreadibartolo/spicetify-like-album-in-order/blob/main/manifest.json)
 
 </div>
 

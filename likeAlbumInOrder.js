@@ -447,7 +447,7 @@
             (match, name) => (values[name] === undefined ? match : values[name])
         );
 
-    console.log("[LikeAlbumInOrder] Estensione caricata correttamente (v4).");
+    console.log("[LikeAlbumInOrder] Estensione caricata correttamente.");
 
     // --- GESTIONE IMPOSTAZIONI (LocalStorage) ---
     const STORAGE_KEYS = {
