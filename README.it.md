@@ -2,12 +2,16 @@
 
 <a href="./README.md" style="underline: none">
   <img src="./.github/icons/flag-united-kingdom_32x32.png" height="32" alt="EN" valign="middle" />
+</a>
+<a href="./README.md" style="underline: none">
   <img src="https://img.shields.io/badge/Language-English_(Default)-282828?style=for-the-badge&cacheSeconds=3600" valign="middle" />
 </a>
 &nbsp;
 <div>
 <a href="./README.it.md" style="underline: none">
   <img src="./.github/icons/flag-italy_48x48.png" height="48" alt="IT" valign="middle" />
+</a>
+<a href="./README.md" style="underline: none">
   <img src="https://img.shields.io/badge/Lingua-Italiano_(Attuale)-1ed760?style=for-the-badge&cacheSeconds=3600" valign="middle" />
 </a>
 </div>
