@@ -1,5 +1,5 @@
 // NAME: Like All Album Tracks In Order
-// AUTHOR: andreadibartolo :P
+// AUTHOR: andreadibartolo
 // DESCRIPTION: Adds or removes all tracks of an album from Favorites while preserving the original order, with a dedicated section in Spotify Settings.
 
 (function likeAlbumInOrder() {
